@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>test</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_405120_hap332b4casgu8fr.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/EaselJS/0.8.0/easeljs.min.js"></script>
+    <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.js"></script>
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+  </head>
+  <body>
+      <div class="loader">
+          <div class="spinner">
+              <div class="rect1"></div>
+              <div class="rect2"></div>
+              <div class="rect3"></div>
+              <div class="rect4"></div>
+              <div class="rect5"></div>
+          </div>
+          <p>稍等片刻，马上就好</p>
+      </div>
+
+    <div class="container purple">
+      <div class="page page-01"></div>
+      <div class="page page-02 hide">
+         <div class="content content01">
+            <h1 class="shing animate words">每个人心中</br>都有一首</br>忘不了的歌</h1>
+            <img src="./src/img/icon01.png" alt="" class="pageImg01">
+            <img src="./src/img/pic1.png" alt="" class="pic1">
+         </div>
+
+         <div class="content content02 hide">
+            <h1 class="shing02 animate words">每一句歌词</br>都有一段</br>不舍忘记的</br>回忆</h1>
+            <img src="./src/img/icon04.png" alt="" class="pageImg02">
+            <img src="./src/img/pic2.png" alt="" class="pic2">
+         </div>
+
+         <div class="content content03 hide">
+          <h1 class="shing03 animate words">听过</br>海哭的声音</br>也听过</br>晴天的故事<br>如今<br>你也成了<br>有故事的人</h1>
+          <img src="./src/img/icon03.png" alt="" class="pageImg03">
+          <img src="./src/img/pic2.png" alt="" class="pic2">
+       </div>
+
+       <div class="content content04 hide">
+        <h1 class="shing04 animate words">青春有张</br>不老的脸</br>曾经的一切</br>被时间<br>酝酿为经典</h1>
+        <img src="./src/img/icon02.png" alt="" class="pageImg04">
+        <img src="./src/img/pic2.png" alt="" class="pic2">
+     </div>
+     <div class="page page-03 hide">
+       <h1 class="title">让你泪流满面的<br>那句经典歌词</h1>
+       <div class="write-box">
+          <div class="write">
+            <textarea name="text" id="text" maxlength="48"></textarea>
+            <div class="subMit">提交</div>
+          </div>
+          <img src="./src/img/t1.png" alt="" class="t1">
+       </div>
+       <img src="./src/img/pic1.png" alt="" class="t2">
+     </div>
+
+     <div class="page page-04 hide">
+       <div class="back"><i class="iconfont icon-zuozuo-copy"></i></p></div>
+       <div class="tip hide">按住文字或者图片可以拖动<br>双击文字可以改变颜色哦</div>
+       <div id="createCanvas">
+         <div class="caozuo hide">
+           <ul>
+             <li class="scale-add"><i class="iconfont icon-add"></i></li>
+             <li class="scale-minus"><i class="iconfont icon-minus"></i></li>
+            
+             <li class="route-add"><i class="iconfont icon-nishizhen"></i></li>
+             <li class="route-minus"><i class="iconfont icon-shunshizhen"></i></li>
+           </ul>
+         </div>
+       </div>
+      <div class="share hide"></div>
+      <img src="./src/img/pic1.png" alt="" class="t2">
+     </div>
+    </div>
+    </div>
+    <audio src="./src/db/bgm.mp3" id="audio" preload="preload" loop="loop"></audio>
+    <script>
+      $youziku.load(".page", "d722d8766f6241e786172f465cb529f4", "REEJI-Sun-BlackGBV1");
+      $youziku.load(".title", "d722d8766f6241e786172f465cb529f4", "REEJI-Sun-BlackGBV1");
+      // $youziku.load("#createCanvas", "d722d8766f6241e786172f465cb529f4", "REEJI-Sun-BlackGBV1");
+      $youziku.draw();
+    </script>
+  </body>
+</html>
